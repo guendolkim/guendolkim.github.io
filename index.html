@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      outline: 1px solid red;}
+    body{      
+     
+    }
+    /* 리스트 스타일 없앰 (전체처리) */
+    li{
+      list-style: none;
+    }
+    /* 헤더 */
+    header{
+      height: 100px;
+      background-color: slategrey;
+    }
+
+    /* 메뉴 */
+    nav{
+      top: 0;
+      position: sticky;
+    }
+    .hd-ul{
+      display: flex;
+      height: 100%;
+      margin: 0;      
+    }
+    nav> ul> li{   
+      height: 30px;  
+      padding-top: 10px;
+      padding-left: 20px; 
+    }
+    nav> ul> li:nth-child(1){
+      background-color: salmon;
+      flex:0 0 50%
+    }
+    nav> ul> li:nth-child(3){
+      background-color: seagreen;
+      flex:0 0 25%
+    }
+    nav> ul> li:nth-child(4){
+      background-color: seagreen;
+      flex:0 0 25%
+    }
+
+    /* 메인 */
+    .back-img{
+      width: 100vw;
+      height: 100vh;
+      background-color: slategrey;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p>오류는 보물 찾기다.</p>
+  </header>
+  <nav>
+    <ul class="hd-ul">
+      <li>김범준 프로필</li>
+      <li></li>
+      <li>Did</li>
+      <li>Doing</li>
+    </ul>
+  </nav>
+  <main class="back-img">
+    <div>
+      <ul>
+        <li><span>이름 :</span>
+            <span>김범준</span>
+        </li>
+        <li><span>출생년도</span>
+            <span>1985년 4월 16일</span>
+        </li>
+        <li><span>학력 :</span>
+            <span>신정고등학교 2004.02 졸업</span><br />
+            <span>경남대학교   2015.02 졸업</span>
+        </li>
+        <li>
+            <span>경력 :</span>
+            <span>자영업 2015.03 ~ 2018.01</span><br />
+            <span>영보플랜트 2018.04 ~ 2019.04</span><br />
+            <span>동일산업 2019.05 ~ 2020.09</span>
+        </li>
+        <li><span>가족 :</span>
+          <p>이쁜 와이프와 슬하에 사랑스러운 아들 두 명 있습니다.</p></li>
+      </ul>
+    </div>
+    <div></div>
+    <div></div>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
