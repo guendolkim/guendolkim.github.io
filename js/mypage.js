@@ -11,6 +11,7 @@ mrKim.addEventListener('click',()=>{
   }else{
     profile.style.display = 'flex';
     slideWrapper.style.display ='none';
+    doingWrapper.style.display ='none';
   }
 });
 
@@ -25,6 +26,7 @@ $did.addEventListener('click',()=>{
   }else{
     slideWrapper.style.display = 'block';
     profile.style.display ='none';
+    doingWrapper.style.display ='none';
   }
 });
 
