@@ -1,5 +1,6 @@
 'user strict';
 
+// profile
 const mrKim = document.querySelector('nav> ul> li:nth-child(1)');
 const profile = document.querySelector('.profile');
 
@@ -13,6 +14,7 @@ mrKim.addEventListener('click',()=>{
   }
 });
 
+// did - slide
 const $did = document.querySelector('nav> ul> li:nth-child(2)');
 const slideWrapper = document.querySelector('.slide-wrapper');
 
@@ -23,5 +25,20 @@ $did.addEventListener('click',()=>{
   }else{
     slideWrapper.style.display = 'block';
     profile.style.display ='none';
+  }
+});
+
+// doing 
+const $doing = document.querySelector('nav> ul> li:nth-child(3)');
+const doingWrapper = document.querySelector('.doing-wrapper');
+
+$doing.addEventListener('click',()=>{
+  console.log("doing click");
+  if(doingWrapper.style.display == 'block'){
+    doingWrapper.style.display ='none';
+  }else{
+    doingWrapper.style.display = 'block';
+    profile.style.display ='none';
+    slideWrapper.style.display ='none';
   }
 });

@@ -144,16 +144,21 @@
    min-width: 100%; 
    min-height: 100%; */
  }
-/* 슬라이드  */
+/* 슬라이드 /doing */
 
-.slide-wrapper{  
+.slide-wrapper, .doing-wrapper{  
   width: 1000px;
   padding-top: 70px;
   display: none;
   margin: 0 auto;
  }
-.slide-title{
+.slide-title, .doing-title{
   color: #fff;
   padding-left: 50px;
   padding-bottom: 20px;
 }
+
+
+
+/* 로딩이미지 */
+
