@@ -31,7 +31,7 @@
    background-color: #333;
    color: #fff;
  }
- header> h1{
+ header>div> h1, header>div> div{
    padding: 30px 0px 30px 100px;
    font-family: 'Gamja Flower', cursive;
  }
@@ -41,6 +41,20 @@
    position: sticky;
    z-index: 1;
  }
+/* 소개페이지 */
+ .back{   
+   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/back.jpg');
+   width: 100%;
+   height: 700px;
+   background-size: cover;
+ }
+ .back-text{
+  font-family: 'Gamja Flower', cursive;
+   color: #fff;
+   font-size: 30px;
+   padding: 100px;
+ }
+
  .hd-ul{
    background-color: #222;
    display: flex;
